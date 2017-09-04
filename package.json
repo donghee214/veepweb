@@ -20,7 +20,10 @@
   "dependencies": {
     "node-sass": "^4.3.0",
     "react": "15.6.1",
+    "react-cntdwn": "^0.3.0",
+    "react-countdown-date": "^1.0.0",
     "react-dom": "15.4.2",
+    "react-motion": "^0.5.1",
     "sass-loader": "^6.0.2"
   },
   "devDependencies": {
