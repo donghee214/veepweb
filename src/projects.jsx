@@ -182,8 +182,8 @@ export default class Projects extends React.Component {
     		</div>
     	</div>
 		<Veepx projectInfoX={this.state.projectInfoX}/>
-		<Veep projectInfo={this.state.projectInfo}/>
 		<Csj projectInfoC={this.state.projectInfoC}/>
+		<Veep projectInfo={this.state.projectInfo}/>
 		</div>
     )
   }

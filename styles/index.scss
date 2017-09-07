@@ -597,6 +597,10 @@ b{
 .story{
 	width: 65%;
 	font-size: 20px;
+	margin: 5% auto 5% auto;
+	border-top: 2px solid #71518A;
+	border-bottom: 2px solid #71518A;
+	padding: 2% 0 2% 0;
 }
 
 .testimonialsTitle {
@@ -626,7 +630,9 @@ b{
 	font-size: 2em;
 } */
 
-
+.content {
+	background-color: #fff;
+}
 
 
 /* smartphones, Android phones, landscape iPhone */

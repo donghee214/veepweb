@@ -45,8 +45,8 @@ export default class Csj extends React.Component {
       	</h1>
       	<p className="description">
           	CSJ is a program designed to create summer work opportunities for students. This year we are launching VEEP's very own pilot CSJ Integration! Not-for-profits who have agreed to
-            move through the CSJ application process to earn government funding will have their projects displayed here. If the project is completed with professional-level standards, YOU
-            can be hired as a summer intern doing MEANINGFUL engineering work! More information about CSJ can be found <a href='https://www.canada.ca/en/employment-social-development/services/funding/youth-summer-job.html'>here</a>.
+            move through the CSJ application process to earn government funding will have their projects displayed here. If exceptional project work has been demonstrated, students can expect
+			to be hired formally as a summer intern doing <em>meaningful</em> engineering work! More info on CSJ can be found <a href='https://www.canada.ca/en/employment-social-development/services/funding/youth-summer-job.html'>here</a>.
       	</p>
 	    <div className="sectionContainer">
 	      	{this.returnCards()}
