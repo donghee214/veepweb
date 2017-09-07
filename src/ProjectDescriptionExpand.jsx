@@ -50,7 +50,7 @@ export default class ProjectDescriptionExpand extends React.Component {
                                         Description
                            </h2>
                             <p className="projectDescription expandText">
-                                       
+
                                         {this.props.info.projectDescription}
                               </p>
                                  <h2 className="projectName expandText shrinkTitle">

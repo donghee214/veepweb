@@ -10,8 +10,8 @@ export default class Veep extends React.Component {
       currentExpand: null,
     }
   }
-  
-  
+
+
   returnCards(){
     const cardList = this.props.projectInfo.map((info) =>
           <Card ref={info.key} expandClicked={this.expandClicked.bind(this)} info= {info} key={info.key}>
@@ -31,7 +31,7 @@ export default class Veep extends React.Component {
     backClicked(){
       this.setState({expand: !this.state.expand})
       this.state.currentExpand.expandView()
-    
+
     }
   render() {
     return (
