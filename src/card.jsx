@@ -69,10 +69,10 @@ export default class Card extends React.Component {
     // unMount(){
     //     this.props.unMount()
     // }
-      
 
-        
-    
+
+
+
   render() {
     return (
 
@@ -110,11 +110,11 @@ export default class Card extends React.Component {
                         </h3>
                     </div>
                 </div>
-                
+
               </div>
-              
-           
-                
+
+
+
 
 
     )

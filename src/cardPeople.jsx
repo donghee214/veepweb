@@ -74,13 +74,13 @@ export default class Card extends React.Component {
     // unMount(){
     //     this.props.unMount()
     // }
-      
 
-        
-    
+
+
+
   render() {
     return (
-  
+
             <div ref="cardLocation" className={this.isActive()}>
                 <div style={{backgroundColor: this.props.info.type[1]}} className={this.topPart()}>
                     <div className={this.resizeIcon()}>
@@ -111,19 +111,19 @@ export default class Card extends React.Component {
                             YEAR
                         </h3>
                     </div>
-                   
-                    <div className = "para extra3">   
+
+                    <div className = "para extra3">
                      <a className="link" href = {this.props.info.linkedin} target="blank">
                         <h3 style={{color:this.props.info.type[2]}} className="label">
                             LINKEDIN
                         </h3>
                         </a>
                     </div>
-                    
+
                 </div>
 
-                
-            </div>  
+
+            </div>
 
 
     )

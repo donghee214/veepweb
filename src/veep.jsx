@@ -10,8 +10,8 @@ export default class Veep extends React.Component {
       currentExpand: null,
     }
   }
-  
-  
+
+
   returnCards(){
     const cardList = this.props.projectInfo.map((info) =>
           <Card ref={info.key} expandClicked={this.expandClicked.bind(this)} info= {info} key={info.key}>
@@ -31,7 +31,7 @@ export default class Veep extends React.Component {
     backClicked(){
       this.setState({expand: !this.state.expand})
       this.state.currentExpand.expandView()
-    
+
     }
   render() {
     return (
@@ -40,9 +40,8 @@ export default class Veep extends React.Component {
       		Veep
       	</h1>
       	<p className="description">
-      		VeepX is a classification of projects that are intended for students who are more interested
-      		in learning. Designed for 1st and 2nd Years, these projects start at the foundational level
-      		and bring members up to speed for the required skills.
+      		Regular VEEP projects are more technically demanding and involve a more comprehensive set of skills. Projects here will require more design considerations, previous experience with
+			relevant technologies, and previous experience with team-based work.
       	</p>
   	    <div className="sectionContainer veepContainer">
   	      	{this.returnCards()}

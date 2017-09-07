@@ -6,6 +6,7 @@ import Business from './business.jsx';
 import Mech from './mech.jsx';
 import Veepx from './veepx.jsx';
 import Veep from './veep.jsx';
+import Csj from './csj.jsx';
 
 export default class Projects extends React.Component {
 	constructor(props){
@@ -60,7 +61,7 @@ export default class Projects extends React.Component {
 				projectTitle: 'GIS Analysis',
 				skills: ['MATLAB', 'Simulink', 'Python'],
 				projectDescription: 'Usage of GIS imaging/mapping to evaluate the different land use patterns of watersheds. End state will be an analysis about the different uses of the watersheds and their downstream effects',
-				outcomes: 'Report on different land uses and how watersheds are being utilized for residential/industrial applciations',
+				outcomes: 'Report on different land uses and how watersheds are being utilized for residential/industrial applications',
 				key: 'five'
 			},
 			{
@@ -69,7 +70,7 @@ export default class Projects extends React.Component {
 				projectTitle: 'Mobile App Development',
 				skills: ['Android Studio', 'Objective C', 'Java'],
 				projectDescription: 'Creation of an app to create a collaborative and safe environment to discuss mental health and share feelings (specific focus on social media integration and development of a "feelings" feed)',
-				outcomes: 'Development of an app frame which will become functional once intagrated with corresponding social media aspect',
+				outcomes: 'Development of an app frame which will become functional once integrated with corresponding social media aspect',
 				key: 'six'
 			},
 			{
@@ -98,7 +99,37 @@ export default class Projects extends React.Component {
 				projectDescription: 'Creation of a system to autonomously analyze weather trends from weather sites and send push notifications when specific weather conditions occur',
 				outcomes: 'Development of a notification system that will be integrated into a mobile app frame',
 				key: 'nine'
-			}]
+			},
+			{
+				type: type['code'],
+				companyName: 'CityPlace Residents Association (CPRA)',
+				projectTitle: 'Mobile App Development',
+				skills: ['Objective C', 'Swift', 'C'],
+				projectDescription: 'Creation of a mobile app to improve communication between CPRA and its members, display important announcements, and deliver upcoming event info',
+				outcomes: 'Improve user experience for users that wish to keep up with their community through their mobile iOS devices',
+				key: 'ten'
+			},
+			{
+				type: type['code'],
+				companyName: 'Heritage Toronto',
+				projectTitle: 'Website Development',
+				skills: ['HTML', 'CSS', 'Javascript', 'Python', 'Java', 'C++', 'Node.js', 'PHP', '.NET', 'SQL'],
+				projectDescription: 'Re-development of heritagetoronto.org, which currently runs on WordPress.',
+				outcomes: 'Improve user experience through an engaging and intuitive user interface and implement a more robust search engine. Highlight and encourage the following: content, programs, membership, donations, and e-newsletter sign-ups. Finally, provide social media integration.',
+				key: 'eleven',
+			}],
+
+			projectInfoC: [{
+				type: type['mech'],
+				companyName: 'Pueblo Science',
+				projectTitle: 'Robotics for the Developing World',
+				skills: ['CAD', 'C/C++', 'Python', 'ANSYS', 'Circuit Design/Integration'],
+				projectDescription: 'Design and implement a simple robotics tool-kit for beginner teachers and students in developing nations. The design should help alleviate local issues such as scanning terrain after natural disasters to better plan relief packages.\
+									Students that take on this project will need to develop documentation in the form of video tutorials to show how the kit is assembled and programmed. In addition, availability of raw materials should be considered carefully as the kit should be able\
+									to be assembled in their home nation.',
+				outcomes: 'Design an end-to-end process of assembling simple machines that perform useful functions for children living in rural areas in developing countries.',
+				key: 'twelve'
+			}],
 		}
 	}
   render() {
@@ -113,7 +144,7 @@ export default class Projects extends React.Component {
     		<p style={{
     			margin:'1vh 0 2vmax 0'
     		}} className="description">
-    			Members chosen are offered plenty of avenues of support for their project. 
+    			Members chosen are offered plenty of avenues of support for their project.
     			By focusing on members professional skills not only will this reflect
     			positively on the respective project, but members walk away with valuable
     			industry skills.
@@ -151,6 +182,7 @@ export default class Projects extends React.Component {
     		</div>
     	</div>
 		<Veepx projectInfoX={this.state.projectInfoX}/>
+		<Csj projectInfoC={this.state.projectInfoC}/>
 		<Veep projectInfo={this.state.projectInfo}/>
 		</div>
     )
